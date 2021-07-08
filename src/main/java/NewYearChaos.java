@@ -1,5 +1,3 @@
-package main.java;
-
 import static org.junit.Assert.assertEquals;
 
 class NewYearChaos {
