@@ -2,7 +2,7 @@
 Repository with solution of algorithms practice to interviews
 
 ## Problem 1 - Count words in a sentence (NumberOfWords.java)
-###Defining the problem
+### Defining the problem
 In this exercise you have a sentence, and you have to count how many times a word is present
 
 ```
@@ -13,11 +13,11 @@ El papa de mi papa no es mi papa
 El 1 papa 3 mi 2 ...
 ```
 
-###Solution
+### Solution
 To solve this problem, I use the new feature of maps implemented with the merge method, you can find the solution in NumberOfWordsImp class
 
 ## Problem 2 - Get Statistics of Job Executions (JobStatistics.java)
-###Defining the problem
+### Defining the problem
 A job has a name and one or more instances. Each instance has a globally unique ID number. Given this list of input lines:
 
 ```
@@ -41,11 +41,11 @@ dump_logs 1343
 read_logs 103
 ```
 
-###Solution
+### Solution
 To solve this problem, I use the merge method included in Java 8 to maps, see the JobStatisticsImp class
 
 ## Problem 3 Anagram (AnagramFinder.java)
-###Defining the problem
+### Defining the problem
 Two words are anagrams of each other if they contain the same combination of characters, including counts, but regardless of order.  
 "BEAR" and "BARE" are anagrams of each other, but "ARREAR" and "RARE" are not.
 
@@ -56,14 +56,14 @@ Input: {"eat", "tea", "funeral", "frog", "elvis", "real fun", "lives", "dog", "a
 Output: ["eat", "tea", "funeral", "elvis", "real fun", "lives", "ate"]
 ```
    
-###Solution
+### Solution
 The main idea to solve this problem is use a Map that allow you to identify duplicated items, but in this problem two Strings are equals if contains the same letters and length,
 so, I created a class named Anagram with an override equals and hashcode methods, implemented the logic to know if two words are Anagrams, 
 the idea is summarize the individual hash of each letter in the override hash function and using Map I can find duplicates
 please see the AnagramFinderImp class to understand this logic.
 
 ## Problem 4 Spiral Matrix (SpiralMatrixCreator.java)
-###Defining the problem
+### Defining the problem
 They are matrix filled as an spiral see next examples
 
 ```
@@ -78,13 +78,13 @@ They are matrix filled as an spiral see next examples
 11 16 15  6
 10  9  8  7
 ```
-###Solution
+### Solution
 The idea to solve this problem was found a pattern of how the matrix is filled by columns and rows, 
 and use as approach the idea of someone walking across the matrix, so, the program move to the next cell
 and fill the value of that cell, please see SpiralMatrixCreatorImp class to validate the solution 
 
 ## Problem 5 Longest sub string (LongestSubStringFinder.java)
-###Defining the problem
+### Defining the problem
 Given a string, find the length of the longest substring without repeating characters.
 
 ```
@@ -105,7 +105,7 @@ Output: 3
 Explanation: The answer is "wke", with the length of 3. 
 Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 ```
-###Solution
+### Solution
 The solution for this problem is use a collection with FIFO pattern implementation, the letters will be processed one by one starting on head towards the tail 
 to find duplicated letters. 
 Exist two collections with FIFO pattern implementation in Java PriorityQueue and LinkedList, the fist one was discarded due to is a sorted
@@ -119,7 +119,7 @@ To see the ordered and sorted concepts in collections, please read the Java Conc
 
  
 ## Problem 6 - Get first not repeating letter in a word (FirstNonRepeating.java)
-###Defining the problem
+### Defining the problem
 Given a word, find the first non repeating letter and its index
 
 ```
@@ -128,11 +128,11 @@ polca - Letter p index 0
 cocolocal - Letter a index 7
 ```
 
-###Solution
+### Solution
 To solve this problem, I use the merge method included in Java 8 to maps, see the JobStatisticsImp class
 
 ## Problem 7 - Celebrity problem (CelebrityMatrix.java)
-###Defining the problem
+### Defining the problem
 In a party of N people, only one person is known to everyone. Such a person may be present in the party, if yes, (s)he doesn’t know anyone in the party. We can only ask questions like “does A know B? “. Find the stranger (celebrity) in the minimum number of questions.
 We can describe the problem input as an array of numbers/characters representing persons in the party. We also have a hypothetical function HaveAcquaintance(A, B) which returns true if A knows B, false otherwise. How can we solve the problem.
 
@@ -153,10 +153,10 @@ MATRIX = { {0, 0, 1, 0},
 Output: No celebrity
 ```
 
-###Solution
+### Solution
 I found two solutions for this problem, the first option is using matrix(CelebrityMatrix.java) and other with collections (CelebrityCollection.java)
 
-####Solution1 Matrix - CelebrityMatrix.java
+#### Solution1 Matrix - CelebrityMatrix.java
 With this solution, we use a queue in which we start adding the possible celebrities that are the rows or columns in the matrix, because matrix is N x N
 ```
 Queue<Integer> possibleCelebrities = new PriorityQueue<>();        
@@ -176,7 +176,7 @@ At the end we have just one possible celebrity, and the only pending validations
 * Everybody should know to the celebrity
 * Anybody should not know the celebrity
 
-####Solution2 Collections - CelebrityCollection.java
+#### Solution2 Collections - CelebrityCollection.java
 With collections the solution is easiest compared to matrix version, here, we create a Class named TeamMember with name as attribute,
 override equals and hashcode methods, and using a Map<TeamMember, Set<TeamMember>>, we define a TeamMember, and the persons who He knows
 and use the next logic
@@ -216,7 +216,7 @@ It took 5 swaps to sort the array.
 ```
 
 ## Problem 9 - [New Year Chaos (NewYearChaos.java)](https://www.hackerrank.com/challenges/new-year-chaos/problem?h_l=interview&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=arrays)
-###Solution
+### Solution
 To solve this problem, you have iterate starting of the maximum to the minimum element over the array in reverse index order, and validate next things
 
 * Iterate the original order in reverse way [8,7,6,5,...]
@@ -227,7 +227,7 @@ To solve this problem, you have iterate starting of the maximum to the minimum e
     * if swaps == 0, do nothing, element is right position
 
 ## Problem 10 - [Subarray with given sum (SubArraySum.java)](https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1)
-###Defining the problem
+### Defining the problem
 Given an unsorted array A of size N that contains only non-negative integers, find a continuous sub-array which adds to a given number S.
 
 ```
@@ -250,5 +250,26 @@ from 1st position to 5th position
 is 15.
 ```
 
-###Solution
+### Solution
 To solve this problem, I use the merge method included in Java 8 to maps, see the JobStatisticsImp class
+
+## Problem 11 - Ransom Note
+### Defining the problem
+Giving a note you should validate if you can build that note using as source a magazine, both note and magazine are strings formed by several words
+
+```
+Example 1
+Input:
+note "dog dog can run" magazine "dog can dog run like dog"
+Return true, cause magazine contains all the words of note
+
+Example 2
+Input:
+note "cat miau can cat" magazine "cat miau can"
+Return false, cause in magazine is missing one cat word
+```
+
+### Solution
+To solve this problem, I use two maps, one for a magazine and another for note 
+with key = word and value= occurrences of the word, and, I iterate note's map 
+validating if magazine contains the word, and the times needed for that word

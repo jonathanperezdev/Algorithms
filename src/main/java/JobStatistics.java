@@ -83,8 +83,6 @@ class Job {
             }
         }
 
-
-
         return job;
     }
 }
