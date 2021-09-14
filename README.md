@@ -17,6 +17,7 @@ El 1 papa 3 mi 2 ...
 To solve this problem, I use the new feature of maps implemented with the merge method, you can find the solution in NumberOfWordsImp class
 
 ## Problem 2 - Get Statistics of Job Executions (JobStatistics.java)
+### Company: Hulu 
 ### Defining the problem
 A job has a name and one or more instances. Each instance has a globally unique ID number. Given this list of input lines:
 
@@ -63,6 +64,7 @@ the idea is summarize the individual hash of each letter in the override hash fu
 please see the AnagramFinderImp class to understand this logic.
 
 ## Problem 4 Spiral Matrix (SpiralMatrixCreator.java)
+### Company: Hulu
 ### Defining the problem
 They are matrix filled as an spiral see next examples
 
@@ -132,6 +134,7 @@ cocolocal - Letter a index 7
 To solve this problem, I use the merge method included in Java 8 to maps, see the JobStatisticsImp class
 
 ## Problem 7 - Celebrity problem (CelebrityMatrix.java)
+### Company: Vivid Seats
 ### Defining the problem
 In a party of N people, only one person is known to everyone. Such a person may be present in the party, if yes, (s)he doesn’t know anyone in the party. We can only ask questions like “does A know B? “. Find the stranger (celebrity) in the minimum number of questions.
 We can describe the problem input as an array of numbers/characters representing persons in the party. We also have a hypothetical function HaveAcquaintance(A, B) which returns true if A knows B, false otherwise. How can we solve the problem.
@@ -254,6 +257,7 @@ is 15.
 To solve this problem, I use the merge method included in Java 8 to maps, see the JobStatisticsImp class
 
 ## Problem 11 - Ransom Note
+### Company: Epam
 ### Defining the problem
 Giving a note you should validate if you can build that note using as source a magazine, both note and magazine are strings formed by several words
 
