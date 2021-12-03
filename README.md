@@ -277,3 +277,17 @@ Return false, cause in magazine is missing one cat word
 To solve this problem, I use two maps, one for a magazine and another for note 
 with key = word and value= occurrences of the word, and, I iterate note's map 
 validating if magazine contains the word, and the times needed for that word
+
+## Problem 12 - Drawing Book
+### Company: Hacker Rank
+### Defining the problem
+https://www.hackerrank.com/challenges/drawing-book/problem?isFullScreen=true
+### Solution
+See /hackerrank/DrawingBook.java
+
+## Problem 13 - Sherlock Valid String
+### Company: Hacker Rank
+### Defining the problem
+https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?isFullScreen=true
+### Solution
+See /hackerrank/SherlockValidString.java
