@@ -12,14 +12,9 @@ class SortCarsByCode {
                         new Car(18, "Renault"),
                         new Car(15, "Suzuki")).collect(Collectors.toList());
 
-        Set<Car> orderCars = cars
-                .stream()
-                .collect(
-                        Collectors.toCollection(
-                                () -> new TreeSet<>(Comparator.comparing(Car::getCod)
-                                        .reversed())));
-
-        orderCars.forEach(System.out::println);
+        cars.stream()
+                .sorted(Comparator.comparingInt(Car::getCod).reversed())
+                .forEach(System.out::println);
     }
 }
 

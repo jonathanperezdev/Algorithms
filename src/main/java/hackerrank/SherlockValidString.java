@@ -24,10 +24,10 @@ class SherlockValidString {
         int mostRepeatedValue = getMostRepeatedValue(times);
         times.removeIf(t -> t.equals(mostRepeatedValue));
 
-        //Means all letters are repeated same times
+        //all letters are repeated same times
         if(times.isEmpty())
             return "YES";
-        //Means exist more than one letter repeated different of the most repeated letter, so, you have to delete more than one letter
+        //Exist more than one letter repeated different of the most repeated letter, so, you have to delete more than one letter
         else if(times.size() > 1)
             return "NO";
         //If exist just one letter I can delete and get valid string

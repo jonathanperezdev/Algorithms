@@ -7,10 +7,11 @@ import static java.util.stream.Collectors.*;
 
 public class SockMerchant {
     public static int sockMerchant(int n, List<Integer> ar) {
-        Map<Integer, Long> socksTimes = ar.stream()
-                .collect(groupingBy(Function.identity(), counting()));
+        Map<Integer, Integer> socksTimes = ar.stream()
+                .collect(groupingBy(Function.identity(), collectingAndThen(counting(), Long::intValue)));
 
         return socksTimes.values().stream()
-                .map(v -> v/2).collect(summingInt(Math::toIntExact));
+                .map(v -> v/2).
+                        collect(summingInt(v -> v));
     }
 }

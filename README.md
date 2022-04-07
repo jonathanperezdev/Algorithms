@@ -291,3 +291,10 @@ See /hackerrank/DrawingBook.java
 https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?isFullScreen=true
 ### Solution
 See /hackerrank/SherlockValidString.java
+
+## Problem 14 - Sum an Expression
+### Company: Kin + Carta
+### Defining the problem
+In Postfix notation  
+### Solution
+See /hackerrank/SherlockValidString.java

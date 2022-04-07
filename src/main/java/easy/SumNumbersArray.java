@@ -1,6 +1,7 @@
 package easy;
 
 import java.util.List;
+import java.util.function.Function;
 
 class SumNumbersArray {
     // Complete the minimumBribes function below.
