@@ -298,3 +298,13 @@ See /hackerrank/SherlockValidString.java
 In Postfix notation  
 ### Solution
 See /hackerrank/SherlockValidString.java
+
+## Problem 15 - The friend circle problem
+### Company: Hourly
+### Defining the problem
+https://www.educative.io/edpresso/the-friend-circle-problem
+### Solution
+See /hackerrank/GroupsOfKnown.java
+
+The logic to solve this problem is think in sets cause sets does not allow duplicates, so, means, sets without common elements
+
