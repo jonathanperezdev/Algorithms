@@ -308,3 +308,9 @@ See /hackerrank/GroupsOfKnown.java
 
 The logic to solve this problem is think in sets cause sets does not allow duplicates, so, means, sets without common elements
 
+## Problem 16 - Save the prisoner
+### Company: Hourly
+### Defining the problem
+https://www.hackerrank.com/challenges/save-the-prisoner/problem?h_r=profile
+### Solution
+See /hackerrank/SaveThePrisoner.java
