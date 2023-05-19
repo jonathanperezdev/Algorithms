@@ -83,7 +83,7 @@ They are matrix filled as an spiral see next examples
 ### Solution
 The idea to solve this problem was found a pattern of how the matrix is filled by columns and rows, 
 and use as approach the idea of someone walking across the matrix, so, the program move to the next cell
-and fill the value of that cell, please see SpiralMatrixCreatorImp class to validate the solution 
+and fill the value with that cell, please see SpiralMatrixCreatorImp class to validate the solution 
 
 ## Problem 5 Longest sub string (LongestSubStringFinder.java)
 ### Defining the problem
